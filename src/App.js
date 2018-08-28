@@ -1,5 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Enhancer from './Enhancer'
 
-const App = () => <div>Hey you!</div>
+@Enhancer
+class App extends Component {
+  render() {
+    return <div>Hey You!</div>
+  }
+}
 
 export default App
